@@ -280,7 +280,7 @@ export default class QRCodeScanner extends Component {
           buttonPositive: this.props.buttonPositive,
         }}
         style={[styles.camera, this.props.cameraStyle]}
-        onBarCodeRead={this._handleBarCodeRead.bind(this)}
+        onGoogleVisionBarcodesDetected={this._handleBarCodeRead.bind(this)}
         type={this.props.cameraType}
         flashMode={this.props.flashMode}
         captureAudio={false}
